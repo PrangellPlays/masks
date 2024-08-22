@@ -1,0 +1,22 @@
+{
+  "__Comment": "Items",
+  "item.masks.blank_mask": "Mask",
+  "item.masks.kitsune_mask": "Mask",
+
+  "__Comment": "Mask Type",
+  "item.masks.blank_mask.desc": "Blank Mask",
+  "item.masks.kitsune_mask.desc": "Kitsune Mask",
+
+  "__Comment": "Mask Description",
+  "item.masks.mask.desc.offset1": "Model can be offset with right click.",
+  "item.masks.mask.desc.offset2": "Current offset: %s.",
+
+  "_Comment": "Items",
+  "item.masks.enchanted_sweet_berries": "Enchanted Sweet Berries",
+
+  "__Comment": "Item Group",
+  "itemgroup.masks.items": "Masks",
+
+  "__Comment": "Trinkets Slot",
+  "trinkets.slot.head.mask": "Mask"
+}
