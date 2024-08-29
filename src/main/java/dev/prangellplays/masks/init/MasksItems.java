@@ -1,7 +1,6 @@
 package dev.prangellplays.masks.init;
 
 import dev.prangellplays.masks.Masks;
-import dev.prangellplays.masks.item.food_item.EnchantedSweetBerriesItem;
 import dev.prangellplays.masks.item.mask.BlankMaskItem;
 import dev.prangellplays.masks.item.mask.KitsuneMaskItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -17,7 +16,7 @@ public class MasksItems {
     public static final Item KITSUNE_MASK = registerItem("kitsune_mask", new KitsuneMaskItem(new FabricItemSettings().rarity(Rarity.UNCOMMON).maxCount(1)));
 
     //Items
-    public static final Item ENCHANTED_SWEET_BERRIES = registerItem("enchanted_sweet_berries", new EnchantedSweetBerriesItem(new FabricItemSettings()));
+
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(Masks.MOD_ID, name), item);
