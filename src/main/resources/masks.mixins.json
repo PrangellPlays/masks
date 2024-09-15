@@ -3,6 +3,8 @@
   "package": "dev.prangellplays.masks.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "server.DamageSourceMixin",
+    "server.DamageTrackerMixin",
     "server.EntityRendererMixin",
     "server.MessageTypeMixin",
     "server.PlayerEntityMixin",

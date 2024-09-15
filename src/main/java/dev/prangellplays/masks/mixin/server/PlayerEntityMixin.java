@@ -6,13 +6,16 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.text.Text;
+import net.minecraft.util.Formatting;
 import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.ModifyArg;
 
 @Mixin(PlayerEntity.class)
 public abstract class PlayerEntityMixin extends Entity {
+    @Unique
     Entity entity;
     public PlayerEntityMixin(EntityType<?> type, World world) {
         super(type, world);
@@ -22,7 +25,7 @@ public abstract class PlayerEntityMixin extends Entity {
     private Text masks$replaceName(Text text) {
         if (entity instanceof LivingEntity living) {
             if (MaskItem.isWearingMask(living)) {
-                Text name = Text.of("Player");
+                Text name = Text.of("Player").copy().formatted(Formatting.OBFUSCATED);
                 return name;
             }
         }

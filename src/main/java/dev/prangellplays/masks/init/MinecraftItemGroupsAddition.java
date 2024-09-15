@@ -21,7 +21,6 @@ public class MinecraftItemGroupsAddition {
     private static void addItemsToCombatItemGroup(FabricItemGroupEntries entries){
     }
     private static void addItemsToFoodItemGroup(FabricItemGroupEntries entries){
-        entries.add(MasksItems.ENCHANTED_SWEET_BERRIES);
     }
     private static void addItemsToIngredientsItemGroup(FabricItemGroupEntries entries){
     }
